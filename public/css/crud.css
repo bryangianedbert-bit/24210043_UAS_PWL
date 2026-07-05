@@ -1,0 +1,349 @@
+/* ======================================================
+   CRUD MODERN BLUE
+====================================================== */
+
+/* =========================
+   TABLE
+========================= */
+
+.table-custom{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    border:none;
+    box-shadow:0 8px 20px rgba(15,23,42,.06);
+}
+
+.table-custom table{
+    margin:0;
+}
+
+.table-custom thead th{
+
+    background:linear-gradient(135deg,#2563EB,#1D4ED8);
+
+    color:#fff;
+
+    border:none;
+
+    padding:16px;
+
+    font-weight:600;
+
+    font-size:.95rem;
+
+    white-space:nowrap;
+
+}
+
+.table-custom tbody td{
+
+    padding:15px;
+
+    vertical-align:middle;
+
+    border-bottom:1px solid #E5E7EB;
+
+}
+
+.table-custom tbody tr{
+
+    transition:.25s;
+
+}
+
+.table-custom tbody tr:hover{
+
+    background:#EFF6FF;
+
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn-primary-custom{
+
+    background:#2563EB;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:10px 18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-primary-custom:hover{
+
+    background:#1D4ED8;
+
+    color:white;
+
+    transform:translateY(-2px);
+
+}
+
+.action-btn{
+
+    width:36px;
+
+    height:36px;
+
+    padding:0;
+
+    border-radius:10px;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.25s;
+
+}
+
+.action-btn:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-label{
+
+    color:#1E3A8A;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+.form-control,
+
+.form-select{
+
+    border-radius:10px;
+
+    border:1px solid #CBD5E1;
+
+    padding:10px 14px;
+
+    transition:.3s;
+
+}
+
+.form-control:focus,
+
+.form-select:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 .2rem rgba(37,99,235,.15);
+
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+
+    border-radius:18px;
+
+    border:none;
+
+    box-shadow:0 8px 20px rgba(15,23,42,.06);
+
+}
+
+.card-header{
+
+    background:white;
+
+    border-bottom:1px solid #E5E7EB;
+
+    font-weight:700;
+
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.badge{
+
+    border-radius:20px;
+
+    padding:7px 12px;
+
+    font-weight:600;
+
+}
+
+/* =========================
+   PAGINATION
+========================= */
+
+.pagination .page-link{
+
+    border:none;
+
+    color:#2563EB;
+
+    margin:0 3px;
+
+    border-radius:8px;
+
+}
+
+.pagination .page-item.active .page-link{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+/* =========================
+   ALERT
+========================= */
+
+.alert{
+
+    border:none;
+
+    border-radius:12px;
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.table-custom{
+
+overflow-x:auto;
+
+}
+
+.table-custom table{
+
+min-width:700px;
+
+}
+
+}
+
+/* ======================================================
+   SEARCH BOX
+====================================================== */
+
+.input-group{
+
+    box-shadow:0 6px 18px rgba(15,23,42,.05);
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.input-group-text{
+
+    background:#fff;
+
+    border-right:none;
+
+}
+
+.input-group .form-control{
+
+    border-left:none;
+
+}
+
+.input-group .form-control:focus{
+
+    box-shadow:none;
+
+}
+
+.input-group .btn{
+
+    border-radius:0;
+
+}
+
+/* ======================================================
+   EMPTY STATE
+====================================================== */
+
+.table tbody tr td{
+
+    transition:.25s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#EFF6FF;
+
+}
+
+/* ======================================================
+   FORM MODERN
+====================================================== */
+
+.form-control,
+.form-select{
+
+    min-height:48px;
+
+    border-radius:12px;
+
+}
+
+.form-control::placeholder{
+
+    color:#94A3B8;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    transform:translateY(-1px);
+
+}
+
+.invalid-feedback{
+
+    font-size:.85rem;
+
+}
+
+.btn-outline-secondary{
+
+    border-radius:10px;
+
+}
+
+hr{
+
+    opacity:.12;
+
+}

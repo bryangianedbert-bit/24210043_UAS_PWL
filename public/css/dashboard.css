@@ -1,0 +1,418 @@
+/* Sidebar Styles */
+.sidebar {
+    min-height: 100vh;
+    width: var(--sidebar-width);
+    background-color: var(--primary-color);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: var(--transition);
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    padding: 20px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.sidebar-menu {
+    padding: 20px 15px;
+}
+
+.menu-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 20px 0 10px 10px;
+    font-weight: 600;
+}
+
+.sidebar-link {
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.sidebar-link i {
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.sidebar-link.active {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    box-shadow: -5px 0 0px var(--bg-color);
+}
+
+/* Navbar & Content Area */
+.main-content {
+    margin-left: var(--sidebar-width);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+}
+
+.top-navbar {
+    background-color: #ffffff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.content-area {
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.dashboard-stat-card {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    border: none;
+}
+
+.dashboard-stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    position: absolute;
+    right: -10px;
+    bottom: -20px;
+    font-size: 6rem;
+    opacity: 0.15;
+}
+
+@media(max-width:768px){
+
+.dashboard-header{
+
+padding:25px;
+
+}
+
+.dashboard-header h2{
+
+font-size:1.6rem;
+
+}
+
+.dashboard-circle{
+
+width:100px;
+height:100px;
+
+}
+
+.dashboard-circle i{
+
+font-size:42px;
+
+}
+
+}
+
+/* =======================================================
+   SIDEBAR MODERN
+======================================================= */
+
+.sidebar{
+    background: linear-gradient(180deg,#1E40AF,#2563EB);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    box-shadow:8px 0 25px rgba(0,0,0,.12);
+}
+
+.sidebar-header{
+    text-align:center;
+    padding:30px 20px;
+    position:relative;
+}
+
+.sidebar-logo{
+    width:70px;
+    height:70px;
+    margin:auto;
+    border-radius:50%;
+    background:rgba(255,255,255,.18);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    color:white;
+    border:2px solid rgba(255,255,255,.25);
+}
+
+.sidebar-title{
+    color:#fff;
+    font-weight:700;
+    margin-top:15px;
+}
+
+.sidebar-subtitle{
+    color:rgba(255,255,255,.75);
+    font-size:.8rem;
+}
+
+.sidebar-menu{
+    padding:20px 15px;
+    flex:1;
+}
+
+.menu-label{
+    color:rgba(255,255,255,.55);
+    font-size:.75rem;
+    letter-spacing:1px;
+    font-weight:700;
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
+
+.sidebar-link{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    color:rgba(255,255,255,.88);
+    padding:13px 16px;
+    border-radius:12px;
+    margin-bottom:8px;
+    transition:.3s;
+    font-weight:500;
+}
+
+.sidebar-link i{
+    font-size:20px;
+    min-width:24px;
+}
+
+.sidebar-link:hover{
+    background:rgba(255,255,255,.12);
+    color:#fff;
+    transform:translateX(4px);
+}
+
+.sidebar-link.active{
+    background:#fff;
+    color:#2563EB;
+    font-weight:700;
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+}
+
+.sidebar-link.active i{
+    color:#2563EB;
+}
+
+.sidebar-footer{
+    padding:20px;
+    border-top:1px solid rgba(255,255,255,.12);
+}
+
+.user-box{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.user-avatar{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:#fff;
+    color:#2563EB;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:700;
+    font-size:18px;
+}
+
+.user-box strong{
+    color:#fff;
+    font-size:.95rem;
+}
+
+.user-box small{
+    color:rgba(255,255,255,.7);
+}
+
+@media(max-width:992px){
+
+.sidebar{
+    left:-260px;
+}
+
+.sidebar.show{
+    left:0;
+}
+
+}
+
+/* =======================================================
+   NAVBAR MODERN
+======================================================= */
+
+.top-navbar{
+
+    background:#ffffff;
+
+    height:75px;
+
+    padding:0 30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom:1px solid #E5E7EB;
+
+    box-shadow:0 5px 18px rgba(15,23,42,.05);
+
+}
+
+.navbar-menu-btn{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:22px;
+
+    transition:.3s;
+
+}
+
+.navbar-menu-btn:hover{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+.navbar-title{
+
+    color:#1E3A8A;
+
+    font-weight:700;
+
+    margin:0;
+
+}
+
+.navbar-subtitle{
+
+    color:#64748B;
+
+}
+
+.navbar-user{
+
+    display:flex;
+
+    flex-direction:column;
+
+    text-align:right;
+
+}
+
+.navbar-user strong{
+
+    color:#1E293B;
+
+    font-size:.95rem;
+
+}
+
+.navbar-user small{
+
+    color:#64748B;
+
+}
+
+.navbar-avatar{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#2563EB,#1D4ED8);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    font-size:18px;
+
+    box-shadow:0 8px 18px rgba(37,99,235,.25);
+
+}
+
+.navbar-logout{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#FEE2E2;
+
+    color:#DC2626;
+
+    transition:.3s;
+
+}
+
+.navbar-logout:hover{
+
+    background:#DC2626;
+
+    color:white;
+
+}

@@ -1,0 +1,78 @@
+:root {
+    /* ===== Blue Theme ===== */
+    --primary-color: #2563EB;
+    --primary-hover: #1D4ED8;
+    --bg-color: #F3F7FF;
+    --text-main: #1E293B;
+    --text-muted: #64748B;
+    --border-color: #DCE6F5;
+
+    --sidebar-width: 260px;
+    --transition: all .3s ease;
+}
+
+/* ==========================
+   Global
+========================== */
+
+body{
+    background:var(--bg-color);
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    color:var(--text-main);
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    transition:var(--transition);
+}
+
+.shadow-soft{
+    box-shadow:0 8px 24px rgba(15,23,42,.08);
+}
+
+/* ==========================
+   Card
+========================== */
+
+.card{
+    border:none;
+    border-radius:16px;
+    background:#ffffff;
+    box-shadow:0 8px 20px rgba(15,23,42,.06);
+    transition:var(--transition);
+}
+
+.card:hover{
+    box-shadow:0 15px 35px rgba(37,99,235,.12);
+}
+
+/* ==========================
+   Scrollbar
+========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#EDF4FF;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#9DBBFF;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#2563EB;
+}
+
+/* ==========================
+   Selection
+========================== */
+
+::selection{
+    background:#2563EB;
+    color:#ffffff;
+}
